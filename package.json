@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "node bin/watch.mjs",
-    "build": "vue-tsc --noEmit && vite build",
+    "build": "node bin/build.mjs",
     "preview": "vite preview"
   },
   "dependencies": {
