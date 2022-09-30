@@ -1,0 +1,37 @@
+{
+	"main": "dist/index.html",
+	"preload": "dist/preload.js",
+	"logo": "dist/logo.png",
+	"development": {
+		"main": "http://localhost:5173"
+	},
+	"features": [
+		{
+			"code": "scripter-self",
+			"explain": "自带命令",
+			"icon": "",
+			"platform": ["win32", "darwin", "linux"],
+			"cmds": [
+				"scripter-create"
+			]
+		},
+		{
+			"code": "scripter-downloaded",
+			"explain": "下载的脚本",
+			"icon": "",
+			"platform": ["win32", "darwin", "linux"],
+			"cmds": [
+
+			]
+		},
+		{
+			"code": "scripter-created",
+			"explain": "创建的脚本",
+			"icon": "",
+			"platform": ["win32", "darwin", "linux"],
+			"cmds": [
+
+			]
+		}
+	]
+}
