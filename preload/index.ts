@@ -1,16 +1,16 @@
-const node = window.utools.getPath('exe')
-const {fork, spawn} = require('child_process')
-const {resolve} = require('path')
+const { fork } = require('child_process')
+const { resolve } = require('path')
+const { ipcRenderer } = require('electron')
 
-const file = resolve(__dirname, '../node_modules/npm/index.js')
-const packageDir = resolve(__dirname, '../test')
-console.log(node, file, packageDir);
+const file = resolve(__dirname, './node_modules/npm/index.js')
 
-const electron = require('electron')
-console.log(electron);
-fork(`${file}`, ['install'], {
-	cwd: packageDir,
-	shell: true,
-	windowsHide: true,
-	stdio: 'inherit'
-})
+function installDependencies(dir: string) {
+	fork(file, ['install'], {
+		cwd: dir,
+		shell: true,
+		windowsHide: true,
+		stdio: 'inherit'
+	})
+}
+
+// ipcRenderer.exp

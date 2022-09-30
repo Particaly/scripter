@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "node bin/watch.mjs",
-    "build": "node bin/build.mjs",
+    "build": "node bin/build.js",
     "preview": "vite preview"
   },
   "dependencies": {
