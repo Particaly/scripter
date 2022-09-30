@@ -1,3 +1,6 @@
 declare interface Window {
-	utools: any
+	utools: any,
+	npm: {
+		install: (dir: string) => void
+	}
 }
