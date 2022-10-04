@@ -1,0 +1,94 @@
+
+// 白色 white
+$w_0_0_5: rgba(255, 255, 255, 0.05);
+$w_0_1: rgba(255, 255, 255, 0.1);
+$w_0_2: rgba(255, 255, 255, 0.2);
+$w_0_3: rgba(255, 255, 255, 0.3);
+$w_0_4: rgba(255, 255, 255, 0.4);
+$w_0_5: rgba(255, 255, 255, 0.5);
+$w_0_6: rgba(255, 255, 255, 0.6);
+$w_0_7: rgba(255, 255, 255, 0.7);
+$w_0_8: rgba(255, 255, 255, 0.8);
+$w_0_9: rgba(255, 255, 255, 0.9);
+$w_1: rgba(255, 255, 255, 1);
+
+// 蓝绿色 blue-green
+$bgreen_1: #3DE8FF;
+$bgreen_0_9: rgba(61, 232, 255, 0.9);
+$bgreen_0_8: rgba(61, 232, 255, 0.8);
+$bgreen_0_6: rgba(61, 232, 255, 0.6);
+$bgreen_0_4: rgba(61, 232, 255, 0.4);
+$bgreen_0_0_8: rgba(61, 232, 255, 0.08);
+
+// 灰蓝色 grey-blue
+$gblue_0_1: rgba(201, 223, 255, 0.1);
+$gblue_0_2: rgba(219, 236, 255, 0.2);
+$gblue_0_3: rgba(219, 236, 255, 0.3);
+$gblue_0_4: rgba(201, 223, 255, 0.4);
+$gblue_0_5: rgba(219, 236, 255, 0.5);
+$gblue_1: #DBECFF;
+
+// 灰黑色 gray-black
+$gblack_0_2: rgba(3, 3, 4, 0.2);
+$gblack_0_4: rgba(17, 20, 22, 0.2);
+$gblack_0_8: rgba(17, 20, 22, 0.8);
+
+// 灰色 gray
+$g_5_0_9: rgba(74, 86, 102, 0.9);
+$g_5: #4A5666;
+$g_6: #394350;
+$g_7: #2F3742;
+$g_8: #252C33;
+$g_9: #1B2025;
+$g_10: #111416;
+$g_z: #272c31;
+$g_y: #232124;
+
+// 功能色
+$red_1: #FF6B6B;
+$red_0_8_nor: rgba(255, 107, 107, 0.8);
+$red_0_6: rgba(255, 107, 107, 0.6);
+$green_1: #26C967;
+$green_0_2: rgba(39, 255, 126, 0.2);
+$green_0_8: rgba(39, 255, 126, 0.8);
+$orange_1: #CC8C2D;
+$blue_1: #2A91F0;
+
+// 阴影 shadow
+$shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
+
+$bg0_gb05_100: #4A5666;
+$bg_gb07_100: #2F3742;
+$bg_gb06_100: #394350;
+$bg_gb05_100: #4A5666;
+$bg1_gb06_100: #394350;
+$bg2_gb06_100: #1b2025;
+$bg2_gb07_100: #2F3742;
+$bg2_gb08_100: #14181D;
+$bg3_gb08_100: #252C33;
+$cuslist_dis_gb01_10: rgba(219, 236, 255, 0.1);
+$highlight_nor_pb_80: rgba(61, 232, 255, 0.8);
+$inputbg_gb10_20: rgba(17, 20, 22, 0.2);
+$inputline_nor_gb01_20: rgba(219, 236, 255, 0.2);
+$text_description_w_100: #fff;
+$spe3_nor_gb10_20: rgba(17, 20, 22, 0.2);
+$spe_act_gb01_50: rgba(219, 236, 255, 0.5);
+$div_light1_w_10: rgba(255, 255, 255, 0.1);
+$text_weak_w_60: rgba(255, 255, 255, 0.6);
+$bg4_gb09_100: #1B2025;
+$btn_nor_gb01_40: rgba(219, 236, 255, 0.4);
+$text_act_pb_80: rgba(61, 232, 255, 0.8);
+
+// 输入框
+$inputline_normal: rgba(219, 236, 255, 0.2);    // 输入框正常状态border的color
+$inputline_hover: rgba(219, 236, 255, 0.5);     // 输入框hover时border的color
+$inputline_focus: rgba(61, 232, 255, 0.8);      // 输入框focus时border的color
+
+// 按钮
+$button_normal: rgba(219, 236, 255, 0.2);
+$button_hover: rgba(219, 236, 255, 0.5);
+$button_focus: rgba(219, 236, 255, 0.3);
+
+$button_primary_normal: rgba(61, 232, 255, 0.8);
+$button_primary_hover: #3DE8FF;
+$button_primary_focus: rgba(61, 232, 255, 0.6);

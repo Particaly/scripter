@@ -3,34 +3,51 @@
 	"preload": "dist/preload.js",
 	"logo": "dist/logo.png",
 	"development": {
-		"main": "http://localhost:5173"
+		"main": "http://localhost:5173/#/home"
 	},
 	"features": [
 		{
-			"code": "scripter-self",
-			"explain": "自带命令",
+			"code": "scripter-dashboard",
+			"explain": "nodejs脚本控制面板",
 			"icon": "",
-			"platform": ["win32", "darwin", "linux"],
+			"platform": [
+				"win32",
+				"darwin",
+				"linux"
+			],
 			"cmds": [
-				"scripter-create"
+				"scripter",
+				{
+					"type": "files",
+					"label": "添加到scripter项目",
+					"fileType": "file",
+					"minLength": 1,
+					"maxLength": 1
+				}
 			]
 		},
 		{
 			"code": "scripter-downloaded",
 			"explain": "下载的脚本",
 			"icon": "",
-			"platform": ["win32", "darwin", "linux"],
+			"platform": [
+				"win32",
+				"darwin",
+				"linux"
+			],
 			"cmds": [
-
 			]
 		},
 		{
 			"code": "scripter-created",
 			"explain": "创建的脚本",
 			"icon": "",
-			"platform": ["win32", "darwin", "linux"],
+			"platform": [
+				"win32",
+				"darwin",
+				"linux"
+			],
 			"cmds": [
-
 			]
 		}
 	]

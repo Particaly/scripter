@@ -5,9 +5,11 @@
   "scripts": {
     "dev": "node bin/watch.mjs",
     "build": "node bin/build.js",
+    "pure-build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "ant-design-vue": "^3.2.12",
     "electron": "^21.0.1",
     "npm": "^8.19.2",
     "vue": "^3.2.37"
@@ -15,8 +17,14 @@
   "devDependencies": {
     "@types/node": "^16.11.62",
     "@vitejs/plugin-vue": "^3.1.0",
+    "sass": "^1.55.0",
+    "sass-loader": "^13.0.2",
     "typescript": "^4.6.4",
+    "unplugin-vue-components": "^0.22.7",
     "vite": "^3.1.0",
+    "vite-plugin-html": "^3.2.0",
+    "vite-plugin-multi-pages": "^0.0.10",
+    "vue-router": "4",
     "vue-tsc": "^0.40.4"
   }
 }

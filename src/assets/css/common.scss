@@ -1,0 +1,178 @@
+@import './variable.scss';
+
+html .ce-body {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    p {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    ol,
+    ul,
+    dl {
+        padding: 0;
+        margin-bottom: 0;
+        list-style-type: none;
+    }
+    video,canvas {
+        display: block;
+    }
+    // button, input, select, textarea {
+    //     outline: none;
+    //     border: 0;
+    // }
+    h1, h2, h3, h4, h5, h6{
+        color: #fff;
+    }
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+        -webkit-transition-delay: 99999s;
+        -webkit-transition: color 99999s ease-out, background-color 99999s ease-out;
+    }
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    user-select: none;
+    box-sizing: border-box;
+}
+html,body{
+    font-family: 'AlibabaPuHuiTi',serif !important;
+    font-weight: 500;
+    font-feature-settings: normal;
+    font-variant: initial !important;
+    line-height: 1.5 !important;
+    font-feature-settings: normal !important;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#app {
+    width: 100%;
+    height: 100%;
+}
+img {
+    vertical-align: top;
+}
+* {
+    user-select: none;
+}
+
+@function white ($opacity) {
+    @return transparentize(white, 1 - $opacity)
+}
+@function black ($opacity) {
+    @return transparentize(black, 1 - $opacity)
+}
+*::-webkit-scrollbar {/*滚动条整体样式*/
+    width: 10px;     /*高宽分别对应横竖滚动条的尺寸*/
+    height:10px;
+}
+*::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+    background: transparent;
+    border: 1px solid white(0.3);
+    border-radius: 5px;
+}
+*::-webkit-scrollbar-track {/*滚动条里面轨道*/
+    background: transparent;
+}
+
+
+.pr {
+    position: relative;
+}
+
+.flex {
+    display: flex;
+}
+
+.fyc {
+    align-items: center;
+}
+
+.fye {
+    align-items: flex-end;
+}
+
+.fys {
+    align-items: flex-start;
+}
+
+.fyb {
+    align-items: baseline;
+}
+
+.fxc {
+    justify-content: center;
+}
+
+.fxsb {
+    justify-content: space-between;
+}
+
+.fxsa {
+    justify-content: space-around;
+}
+
+.fdc {
+    flex-direction: column;
+}
+.fwnw {
+    flex-wrap: nowrap;
+}
+.nw {
+    white-space: nowrap;
+}
+.hand {
+    cursor: pointer;
+}
+$gaps: 0, 5, 6, 8, 10, 12, 14, 15, 16, 18, 20, 24, 28, 30, 35, 40, 45;
+$unit: 1px;
+
+@each $gap in $gaps {
+    .xgap-#{$gap} {
+        column-gap: $gap * $unit;
+    }
+
+    .ygap-#{$gap} {
+        row-gap: $gap * $unit;
+    }
+
+    .my-#{$gap} {
+        margin: $gap * $unit auto;
+    }
+
+    .mx-#{$gap} {
+        margin-left: $gap * $unit;
+        margin-right: $gap * $unit;
+    }
+
+    .ml-#{$gap} {
+        margin-left: $gap * $unit;
+    }
+
+    .mr-#{$gap} {
+        margin-right: $gap * $unit;
+    }
+
+    .mb-#{$gap} {
+        margin-bottom: $gap * $unit;
+    }
+
+    .mt-#{$gap} {
+        margin-top: $gap * $unit;
+    }
+}
